@@ -37,4 +37,41 @@ Done! server is on `localhost:3000` and connected to Chat Engine!
 
 All new "Sign Up" users are on Chat Engine, and their credentials are found upon "Login".
 
-To understand the code, please watch [this video]()!
+# Backend Part
+
+# Connect FastAPI to Chat Engine!
+
+## Setup Steps
+
+Making FastAPI server support chat - in 3 steps:
+
+### 1 - Setup a Chat Engine server
+
+Go to [Chat Engine](https://chatengine.io) to setup your own chat server.
+
+- Click "New Project" and follow the steps
+- Your `Project ID` and `Private Key` will be required for step 2
+
+### 2 - Connect `main.py` to Chat Engine
+
+Add the following variables with your own Project ID and Private Key.
+
+```
+CHAT_ENGINE_PROJECT_ID=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+CHAT_ENGINE_PRIVATE_KEY=yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+```
+
+### 3 - Install & Start
+
+Run the following two lines of code in `Backend/`.
+
+```
+python -m venv venv
+venv/Scripts/activate
+pip install -r requirements.txt
+uvicorn main:app --reload --port 3001
+```
+
+Done! server is on `localhost:3001` and connected to Chat Engine!
+
+All new `/signup` users are on Chat Engine, and their credentiuals are found upon `/login`.
