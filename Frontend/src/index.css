@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 6vw;
+  background: #111; /* Dark background color */
+  color: #fff; /* Text color */
+}
+
+.card {
+  width: 300px; /* Increase the width */
+  position: absolute; /* Change to absolute for centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the card horizontally and vertically */
+  text-align: center;
+  background: #222; /* Darker card background color */
+  border: 1px solid #333; /* Darker border color */
+  border-radius: 10px; /* Add rounded borders */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow for card */
+  padding: 20px; /* Add padding inside the card */
+  margin: 20px; /* Add margin around the card */
+}
+
+
+.title {
+  padding-top: 32px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+input {
+  width: calc(100% - 16px);
+  margin-top: 12px;
+  padding: 8px;
+  background-color: #333; /* Darker input background color */
+  color: #fff; /* Text color for input */
+  outline: none;
+  border: 1px solid #444; /* Darker border color for input */
+}
+
+.submit {
+  margin-top: 12px;
+  width: 100%;
+  padding: 8px;
+  background-color: #007BFF; 
+  color: #fff; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.logout {
+  background-color: #ff5733; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 10px 20px; /* Adjust the padding */
+  border: none; /* Remove the button border */
+  border-radius: 4px; /* Add a border radius */
+  cursor: pointer; /* Add a pointer cursor */
+}
