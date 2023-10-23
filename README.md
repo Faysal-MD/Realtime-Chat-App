@@ -3,8 +3,6 @@
 
 This simple repo shows how to easily add chat functionality into a React project with [Chat Engine](https://chatengine.io).
 
-To understand the code, please watch [this video]()!
-
 ## Setup Steps
 
 Setup this chat client in 3 steps below.
