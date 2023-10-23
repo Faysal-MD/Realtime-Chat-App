@@ -1,10 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-# pip install "uvicorn[standard]"
-
 from pydantic import BaseModel
 from typing import Union
-
 import requests
 
 app = FastAPI()
@@ -18,7 +15,6 @@ app.add_middleware(
 
 PROJECT_ID = "038f4e5a-408f-438f-bcac-8e5adc6e0164"
 PRIVATE_KEY = "b2df5671-aa7b-427b-ae18-94f66ac8d357 "
-
 
 class User(BaseModel):
     username: str
@@ -53,9 +49,3 @@ async def root(user: User):
                              headers={"Private-Key": PRIVATE_KEY}
                              )
     return response.json()
-
-# python3 -m venv venv
-# source venv/bin/activate
-# pip install --upgrade pip
-# pip install -r requirements.txt
-# uvicorn main:app --reload --port 3001
