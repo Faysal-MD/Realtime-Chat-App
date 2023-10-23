@@ -13,8 +13,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-PROJECT_ID = "038f4e5a-408f-438f-bcac-8e5adc6e0164"
-PRIVATE_KEY = "b2df5671-aa7b-427b-ae18-94f66ac8d357 "
+PROJECT_ID = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+PRIVATE_KEY = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
 
 class User(BaseModel):
     username: str
